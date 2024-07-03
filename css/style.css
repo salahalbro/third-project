@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media(max-width:768px){
+    .hero-img{
+        height: 500px ! important;
+    }
+    .join-card{
+        margin-bottom: 10px !important;
+    }
+    .scale-card{
+        margin-bottom: 10px !important;
+    }
+    .know-more{
+        margin-bottom: 10px !important;
+    }
+    .provinces-card{
+        margin-bottom: 10px !important;
+    }
+    .social ul li i{
+        font-size: 26px;
+    }
+    .footer-box1,
+    .footer-box2{
+        display: none;
+    }
+    .footer-box3{
+        margin: auto;
+    }
+    .card-news .img-card{
+        display: none;
+    }
+    .card-news .left-cared{
+        width: 100%;
+        right: 0;
+        text-align: center;
+        padding: 5px;
+        transform: skew(0deg);
+    }
+    .card-news .left-cared p{
+        text-align: center;
+        font-size: 12px;
+        word-break: break-all;
+    }
+    .card-news .left-cared .btn-2,
+    .card-news .left-cared .btn-3{
+        display: none;
+    }
+    .card-news .text-card{
+        width: 100%;
+        left: 0;
+        text-align: center;
+        padding: 5px;
+        transform: skew(0deg);
+    }
+    .card-news .text-card p{
+        text-align: center;
+        font-size: 12px;
+        word-break: break-all;
+    }
+    .card-news .text-card .btn-2,
+    .card-news .text-card .btn-3{
+        display: none;
+    }
+    .right-cared::before,
+    .left-cared::before{
+        display: none;
+    }
+    .my-scale{
+        margin: auto !important;
+    }
+    .footer p{
+        font-size: 12px;
+    }
+}
+@media(max-width:576px){
+    .hero-img{
+        height: 500px ! important;
+    }
+    .join-card{
+        margin-bottom: 10px !important;
+    }
+    .scale-card{
+        margin-bottom: 10px !important;
+    }
+    .know-more{
+        margin-bottom: 10px !important;
+    }
+    .provinces-card{
+        margin-bottom: 10px !important;
+    }
+    .social ul li i{
+        font-size: 20px;
+    }
+}
+.social{
+    position: fixed;
+    top: 80px;
+    right: 12px;
+    z-index: 10;
+}
+.social ul{
+    list-style: none;
+}
+.social ul i{
+    font-size: 30px;
+    margin-top: 16px;
+    padding: 6px;
+    border-radius: 6px;
+    background-color: rgb(29, 29, 133);
+    color: white;
+    cursor: pointer;
+}
+.img-fixed{
+    width: 100%;
+    height: 300px;
+    background-image: url(../image/palmyra.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 100px 0px;
+}
+.know-more{
+    position:relative;
+}
+.know-more::after{
+    position:absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 0%;
+    background-color: rgba(0, 0, 0, 30%);
+    transition: 0.5s;
+}
+.know-more:hover::after{
+    width: 100%;
+    height: 100%;
+}
+.know-more::before{
+    position:absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    height: 0%;
+    background-color: rgba(0, 0, 0, 30%);
+    transition: 0.5s;
+}
+.know-more:hover::before{
+    width: 100%;
+    height: 100%;
+}
+/* ---card news---- */
+.card-news{
+    width: 80%;
+    height: 300px;
+    box-shadow: 0px 0px 22px 6px gray;
+    margin:30px auto;
+    position: relative;
+    overflow: hidden;
+}
+.left-cared{
+    width: 70%;
+    height: 100%;
+    margin: 0px 20px;
+    background-color: white;
+    transform: skewX(-7deg);
+    position: relative;
+}
+.right-card{
+    width: 30%;
+    height: 100%;
+    background-image: url(../image/R\ \(1\).jfif);
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+.left-cared::before{
+    position: absolute;
+    content: '';
+    top: 70px;
+    left: 0px;
+    width: 30px;
+    height: 2px;
+    background-color: blue;
+    transition: 0.3s;
+}
+.card-news:hover .left-cared::before{
+    width: 60px;
+}
+.card-news:hover .right-card{
+    transform: scale(1.6);
+}
+/* right */
+.right-cared{
+    width: 70%;
+    height: 100%;
+    margin: 0px 20px;
+    padding-left: 12px;
+    background-color: white;
+    transform: skewX(-7deg);
+    position: relative;
+    right: -250px;
+}
+.left-card{
+    width: 30%;
+    height: 100%;
+    background-image: url(../image/R\ \(1\).jfif);
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+.right-cared::before{
+    position: absolute;
+    content: '';
+    top: 70px;
+    left: 12px;
+    width: 30px;
+    height: 2px;
+    background-color: blue;
+    transition: 0.3s;
+}
+.card-news:hover .right-cared::before{
+    width: 60px;
+}
+.card-news:hover .left-card{
+    transform: scale(1.6);
+}
+
+/* scale-card */
+.my-scale{
+    gap: 70px;
+}
+.scale-card{
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.big-imag{
+    position: relative;
+}
+.big-imag::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 60%);
+}
+.haeder-cared{
+    position: absolute;
+    top: 0;
+    left:0;
+    color: white;
+}
+.footer-cared{
+    position: absolute;
+    top: 225px;
+}
+.scale-card:hover{
+    transform: scale(0.9);
+}
+.join-us{
+    width: 80%;
+}
+.join-card{
+    background-color: rgb(12, 38, 61);
+    box-shadow: 0px 0px 40px 3px rgba(0, 0, 255, 0.822) ;
+}
+.footer{
+    width: 100%;
+    height: 435px;
+    background-color: rgb(33, 37, 41);
+    margin-top: 50px;
+}
+.footer-box{
+    width: 300px;
+    height: 400px;
+    color: white;
+    text-align: center;
+}
+.header-box{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0px;
+    position: relative;
+}
+.header-box::after{
+ position: absolute;
+ content: '';
+ top: 100px;
+ left: 50px;
+ width:220px;
+ height: 1px;
+ background-color: gray;
+}
+.footer-title{
+    line-height: 50px;
+}
+.footer-parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
